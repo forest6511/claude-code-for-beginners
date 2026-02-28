@@ -3,8 +3,8 @@ import { useState } from 'react'
 // 10 general knowledge questions with 4 multiple choice options each
 const QUESTIONS = [
   {
-    question: 'What is the capital city of Japan?',
-    options: ['Osaka', 'Kyoto', 'Tokyo', 'Hiroshima'],
+    question: 'Which New York City borough is home to Central Park?',
+    options: ['Brooklyn', 'Queens', 'Manhattan', 'The Bronx'],
     correct: 2,
   },
   {
