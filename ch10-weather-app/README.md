@@ -81,7 +81,7 @@ ch10-weather-app/
 ├── package.json        # Project config and dependencies
 ├── vite.config.js      # Vite configuration
 ├── .env.example        # Template — copy to .env and add your key
-├── .env                # Your real API key (not committed to git)
+├── .env                # Your real API key — create this yourself (not in git)
 └── src/
     ├── main.jsx        # React entry point
     ├── App.jsx         # Main component (search, current weather, forecast)
