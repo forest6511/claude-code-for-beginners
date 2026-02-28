@@ -44,19 +44,29 @@ Scans the current project directory and outputs a summary: file list, total line
 
 ## Setting Up Skills
 
-To use these Skills in your own Claude Code sessions:
+Skills can live in two places:
 
-1. Create a `.claude/skills/` directory inside your project (or in your home directory for global skills)
-2. Copy the skill folder (e.g., `new-project/`) into `.claude/skills/`
-3. Start a Claude Code session — the skill will be available as a slash command
+| Location | Path | Scope |
+|----------|------|-------|
+| Personal | `~/.claude/skills/` | Available in all your projects |
+| Project  | `.claude/skills/` inside your project | This project only |
 
-For example:
+The book uses personal skills (available everywhere). To install a skill from this directory:
+
+**macOS / Linux:**
 ```bash
-mkdir -p ~/my-project/.claude/skills
-cp -r skills/new-project ~/my-project/.claude/skills/
-cd ~/my-project
+# Personal skill (matches the book's Chapter 8 instructions)
+mkdir -p ~/.claude/skills/new-project
+cp ch08-skills-and-mcp/skills/new-project/SKILL.md ~/.claude/skills/new-project/
 claude
-# Now type /new-project to use the skill
+# Now type /new-project in any project
+```
+
+**Windows (PowerShell):**
+```powershell
+mkdir -Force "$HOME\.claude\skills\new-project"
+Copy-Item ch08-skills-and-mcp\skills\new-project\SKILL.md "$HOME\.claude\skills\new-project\"
+claude
 ```
 
 ## MCP (Model Context Protocol)
