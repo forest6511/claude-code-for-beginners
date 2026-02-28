@@ -16,7 +16,21 @@ A 10-question multiple-choice quiz app built with React and Vite. This is the pr
 
 ### Requirements
 
-- Node.js (version 18 or higher) — see Chapter 2 for installation instructions
+- Node.js version 18 or higher
+
+**Install Node.js** (if not already installed):
+
+1. Go to [nodejs.org](https://nodejs.org)
+2. Download the **LTS** version
+3. Run the installer and follow the steps (accept all defaults)
+4. Close and reopen your terminal, then verify:
+
+```bash
+node --version
+npm --version
+```
+
+Both commands should print a version number.
 
 ### Install dependencies
 

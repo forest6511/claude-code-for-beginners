@@ -16,9 +16,35 @@ The analyzer reads any CSV file with `date,description,category,amount` columns 
 3. **Monthly Breakdown** — Totals grouped by month
 4. **Largest Expense** — The single biggest transaction
 
-## Running the Script
+## Requirements
 
-Make sure Python 3 is installed on your computer (Chapter 2 covers this).
+Python 3.8 or higher. No external packages — the script uses only Python's built-in standard library.
+
+**Install Python** (if not already installed):
+
+macOS:
+1. Go to [python.org/downloads](https://python.org/downloads)
+2. Click the big **Download Python** button
+3. Run the installer and follow the steps (accept all defaults)
+4. Close and reopen your terminal, then verify:
+
+```bash
+python3 --version
+```
+
+Windows:
+1. Go to [python.org/downloads](https://python.org/downloads)
+2. Click the big **Download Python** button
+3. **Important**: On the first installer screen, check **"Add python.exe to PATH"** before clicking Install Now
+4. Close and reopen PowerShell, then verify:
+
+```bash
+python --version
+```
+
+You should see something like `Python 3.12.4`. Any 3.x version works.
+
+## Running the Script
 
 **Basic usage** (uses `expenses.csv` in the same directory):
 

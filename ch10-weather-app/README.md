@@ -37,7 +37,23 @@ The `.env` file is listed in `.gitignore` so your key will not be committed to v
 
 ### Step 3 — Install dependencies
 
-Make sure Node.js (version 18 or higher) is installed. Then run:
+**Requirements**: Node.js version 18 or higher.
+
+**Install Node.js** (if not already installed):
+
+1. Go to [nodejs.org](https://nodejs.org)
+2. Download the **LTS** version
+3. Run the installer and follow the steps (accept all defaults)
+4. Close and reopen your terminal, then verify:
+
+```bash
+node --version
+npm --version
+```
+
+Both commands should print a version number.
+
+Then install the project dependencies:
 
 macOS:
 ```bash
