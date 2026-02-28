@@ -1,4 +1,4 @@
-# Chapter 8: Supercharging Claude Code — Skills and CLAUDE.md
+# Chapter 8: Supercharging Claude Code — CLAUDE.md, Skills, Sub-agents, and MCP
 
 This directory contains reference files for Chapter 8 of *Claude Code for Beginners*, which covers three powerful ways to customize Claude Code: CLAUDE.md project memory, Skills (custom commands), and MCP (Model Context Protocol).
 

@@ -8,7 +8,7 @@ This repository contains all project files from the book so you can follow along
 
 | Chapter | Project | What You Build |
 |---------|---------|---------------|
-| 3 | [HTML Game](ch03-html-game/) | Your first web page -- a simple browser game using HTML |
+| 3 | [HTML Games](ch03-html-game/) | Two browser games (Snake and Memory Card) built as single HTML files |
 | 5 | [CSV Analyzer](ch05-csv-analyzer/) | A Python tool that reads and analyzes CSV data files |
 | 8 | [Skills and MCP](ch08-skills-and-mcp/) | Configuration examples for Skills, Sub-agents, and MCP |
 | 9 | [Quiz App](ch09-quiz-app/) | An interactive quiz app built with React |
