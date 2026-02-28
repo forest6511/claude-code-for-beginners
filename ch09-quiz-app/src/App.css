@@ -1,0 +1,211 @@
+/* App.css — Quiz App styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.container {
+  width: 100%;
+  max-width: 640px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 36px 40px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+}
+
+/* Progress bar */
+.progress-bar-track {
+  height: 6px;
+  background: #e9ecef;
+  border-radius: 3px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  border-radius: 3px;
+  transition: width 0.4s ease;
+}
+
+.progress-label {
+  font-size: 0.85rem;
+  color: #6c757d;
+  margin-bottom: 24px;
+  text-align: right;
+  font-weight: 500;
+}
+
+/* Question */
+.question-text {
+  font-size: 1.3rem;
+  color: #1a1a2e;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 28px;
+}
+
+/* Options */
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  background: #f8f9fa;
+  border: 2px solid #e9ecef;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: #343a40;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.15s, border-color 0.15s, transform 0.1s;
+  font-family: inherit;
+}
+
+.option:hover:not(:disabled) {
+  background: #eef0ff;
+  border-color: #667eea;
+  transform: translateX(3px);
+}
+
+.option:disabled {
+  cursor: default;
+}
+
+.option.correct {
+  background: #d4edda;
+  border-color: #28a745;
+  color: #155724;
+}
+
+.option.wrong {
+  background: #f8d7da;
+  border-color: #dc3545;
+  color: #721c24;
+}
+
+.option-letter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background: #e9ecef;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  font-weight: 700;
+  flex-shrink: 0;
+  color: #6c757d;
+}
+
+.option.correct .option-letter {
+  background: #28a745;
+  color: white;
+}
+
+.option.wrong .option-letter {
+  background: #dc3545;
+  color: white;
+}
+
+/* Feedback */
+.feedback {
+  margin-top: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.feedback-correct {
+  color: #155724;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.feedback-wrong {
+  color: #721c24;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Button */
+.btn-primary {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border: none;
+  padding: 13px 28px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  transition: opacity 0.15s, transform 0.1s;
+  letter-spacing: 0.3px;
+}
+
+.btn-primary:hover {
+  opacity: 0.92;
+  transform: translateY(-1px);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+/* Results card */
+.result-card {
+  text-align: center;
+}
+
+.result-emoji {
+  font-size: 4rem;
+  margin-bottom: 16px;
+}
+
+.result-card h1 {
+  font-size: 1.9rem;
+  color: #1a1a2e;
+  margin-bottom: 20px;
+}
+
+.score-display {
+  font-size: 1.2rem;
+  color: #495057;
+  margin-bottom: 16px;
+}
+
+.score-number {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #667eea;
+}
+
+.result-message {
+  font-size: 1rem;
+  color: #6c757d;
+  margin-bottom: 32px;
+  line-height: 1.5;
+}
