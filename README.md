@@ -34,7 +34,7 @@ cd claude-code-for-beginners
 
 ## Book Links
 
-- Amazon Kindle: *(coming soon)*
+- [Claude Code for Beginners](https://www.amazon.com/dp/B0GQNWBYR9) on Amazon Kindle
 
 ## License
 
